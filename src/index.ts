@@ -1,5 +1,6 @@
 import { createServer } from './app/server';
-import { PORT } from './config/constants';
+import { PORT } from './app/config/constants';
+import database from './app/database';
 
 const bootstrap = async () => {
   const app = await createServer();
